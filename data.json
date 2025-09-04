@@ -1,7 +1,17 @@
 [
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "experiments/molnar.js",
+    "name": "Vera Molnar Artwork Recreation",
+    "description": "Recreation of one of Vera Molnars artworks. Keeping it similar to the original."
+  },
+  {
+    "file": "experiments/molnarVariatonOne.js",
+    "name": "Molnar Variation 1",
+    "description": "By deleting some vertex function calls and making other small changes - you get the look of doodly triangles. The deletion of the noLoop() gives it a sketchy touch!"
+  },
+    {
+    "file": "experiments/molnarVariationTwo.js",
+    "name": "Molnar Variation 2",
+    "description": "Some changes to the original code transformeded it to something totallt different."
   }
 ]
