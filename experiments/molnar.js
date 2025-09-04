@@ -1,5 +1,6 @@
 //The following code was written with the help of Garrit´s video example: https://play.ju.se/media/Noise+examples,+and+Vera+Moln%C3%A1r/0_3pcpvm3q -
 
+
 //VARIABLES
 //r = rectangle & is = inside strokes
 const rSize = 80;
@@ -8,7 +9,7 @@ const isAmount = 11;
 //SETUP
 function setup() {
   createCanvas(innerWidth, innerHeight);
-  background(250, 240, 230);
+  background(0, 0, 0);
 }
 
 //FUNTIONS
@@ -49,8 +50,8 @@ function rectangles(x, y, rSize, isAmount) {
 
 function draw() {
   //general
-  background(250, 240, 230);
-  stroke(104, 81, 48);
+  background(0, 0, 0);
+  stroke(255, 255, 255);
   //draw
   for (let x = 0; x < 20; x++) {
     for (let y = 0; y < 20; y++) {
