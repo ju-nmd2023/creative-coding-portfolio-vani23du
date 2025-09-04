@@ -53,8 +53,8 @@ function draw() {
   background(250, 240, 230);
   stroke(104, 81, 48);
   //draw
-  for (let x = 0; x < 20; x++) {
-    for (let y = 0; y < 20; y++) {
+  for (let x = 0; x < 40; x++) {
+    for (let y = 0; y < 40; y++) {
       rectangles(rSize / 2 + x * rSize, rSize / 2 + y * rSize, rSize, isAmount);
     }
   }
