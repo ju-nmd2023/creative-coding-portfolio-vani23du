@@ -6,10 +6,12 @@
 const rSize = 80;
 const isAmount = 11;
 
+/* -------------------------------------- */
+
 //SETUP
 function setup() {
-  createCanvas(innerWidth, innerHeight);
-  background(0, 0, 0);
+  createCanvas(innerWidth, 400);
+  frameRate(3);
 }
 
 //FUNTIONS
@@ -48,6 +50,7 @@ function rectangles(x, y, rSize, isAmount) {
   }
 }
 
+//!THE! DRAW FUNCTION
 function draw() {
   //general
   background(0, 0, 0);
@@ -58,5 +61,4 @@ function draw() {
       rectangles(rSize / 2 + x * rSize, rSize / 2 + y * rSize, rSize, isAmount);
     }
   }
-  noLoop();
 }

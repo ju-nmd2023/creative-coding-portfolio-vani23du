@@ -2,13 +2,15 @@
 
 //VARIABLES
 //r = rectangle & is = inside strokes
-const rSize = 200; //changed
-const isAmount = 400; //changed
+const rSize = 200;
+const isAmount = 400; 
+
+/* -------------------------------------- */
 
 //SETUP
 function setup() {
-  createCanvas(innerWidth, innerHeight);
-  background(0, 0, 0);
+  createCanvas(innerWidth, 400);
+  frameRate(4);
 }
 
 //FUNTIONS
@@ -17,15 +19,15 @@ function randomValues(position, randomness) {
   return position + map(Math.random(), 0, 1, -randomness, randomness);
 }
 
-//draw the rectangles/variants of lines
+//draw the variants of the objects
 function rectangles(x, y, rSize, isAmount) {
-  const randomness = rSize / 3; //changed
+  const randomness = rSize / 3;
   noFill();
   for (let i = 0; i < isAmount; i++) {
     const size = (rSize / isAmount) * i;
-    const midPoint = size / 3; //changed
+    const midPoint = size / 3;
 
-    //drawing a sketchy single rectangle
+    //drawing a sketchy single object
     beginShape();
     vertex(
       randomValues(x - midPoint, randomness),
@@ -47,6 +49,7 @@ function rectangles(x, y, rSize, isAmount) {
   }
 }
 
+//!THE! DRAW FUNCTION
 function draw() {
   //general
   background(0, 0, 0);
@@ -58,6 +61,5 @@ function draw() {
       //changed
       rectangles(rSize / 2 + x * rSize, rSize / 2 + y * rSize, rSize, isAmount);
     }
-    noLoop();
   }
 }
