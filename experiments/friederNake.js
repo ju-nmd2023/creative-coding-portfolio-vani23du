@@ -23,12 +23,29 @@ function setup() {
   frameRate(20);
 }
 
+//FUNCTIONS
+function drawSun() {
+  push();
+  fill(0, 0, 0);
+  noStroke();
+  arc(510, 210, 200, 200, PI, radians(360));
+  pop();
+}
+
+function drawSky() {
+  push();
+  fill(255,255,255);
+  rect(0, 0, innerWidth, 210);
+  pop();
+}
+
 //!THE! DRAW FUNCTION
 function draw() {
   //general
-  background(0, 1);
+  push();
+  background(0, 0, 0, 8);
   strokeWeight(1);
-  stroke(255);
+  stroke(100);
   noFill();
 
   //draw
@@ -38,13 +55,17 @@ function draw() {
   x2 = noise(adjustNoise + random(500, 1000)) * innerWidth;
   y2 = noise(adjustNoise + 0) * innerHeight;
 
-  x3 = noise(adjustNoise + random(500, 1000)) * innerWidth;
+  x3 = noise(adjustNoise + random(500, 200)) * innerWidth;
   y3 = noise(adjustNoise + 0) * innerHeight;
 
-  x4 = noise(adjustNoise + random(500, 1000)) * innerWidth;
+  x4 = noise(adjustNoise + random(500, 300)) * innerWidth;
   y4 = noise(adjustNoise + 0) * innerHeight;
 
   bezier(x1, y1, x2, y2, x3, y3, x4, y4);
 
   adjustNoise += 0.01;
+  pop();
+
+  drawSky();
+  drawSun();
 }

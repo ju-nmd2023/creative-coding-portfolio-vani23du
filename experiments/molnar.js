@@ -4,7 +4,7 @@
 //VARIABLES
 //r = rectangle & is = inside strokes
 const rSize = 80;
-const isAmount = 11;
+const isAmount = 12;
 
 /* -------------------------------------- */
 
@@ -56,8 +56,8 @@ function draw() {
   background(0, 0, 0);
   stroke(255, 255, 255);
   //draw
-  for (let x = 0; x < 20; x++) {
-    for (let y = 0; y < 20; y++) {
+  for (let x = 0; x < 30; x++) {
+    for (let y = 0; y < 30; y++) {
       rectangles(rSize / 2 + x * rSize, rSize / 2 + y * rSize, rSize, isAmount);
     }
   }

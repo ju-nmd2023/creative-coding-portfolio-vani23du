@@ -14,14 +14,24 @@
     "name": "EGGS FROM A SPIDER",
     "description": "Another variation of the artwork by Vera Molnar. Some changes to the original code transformeded it to something totallt different and unrecognisable. For me it looks like egg sacs in a web - but for you, it may look like something else. Hopefully it does if you're afraid of spiders and everything that comes with them..."
   },
-  {
-    "file": "experiments/friederNake.js",
-    "name": "SUNSET WATER RIPPLES",
-    "description": "A variation of Frieder Nakes artworks (work in progress...)."
+   {
+    "file": "experiments/michaelNollTwo.js",
+    "name": "SUSHI",
+    "description": "A variation of Michael Nolls artworks. Pieces of sushi on a platter. Yum!"
   },
   {
     "file": "experiments/michaelNollOne.js",
     "name": "QR-CODE",
-    "description": "A variation of Michael Nolls artworks - but make it a qr-code that changes when clicked (WARNING: Don't scan it - I can't guarantee your safety hihi)! "
+    "description": "Another variation of Michael Nolls artworks - but make it a qr-code that changes when clicked (WARNING: Don't scan it - I can't guarantee your safety hihi)! "
+  },
+    {
+    "file": "experiments/friederNake.js",
+    "name": "SUNSET WATER RIPPLES",
+    "description": "A variation of Frieder Nakes artworks. It's a sunset and the sun reflects on the water - without color ofcourse - I like black and white :)"
+  },
+  {
+    "file": "experiments/friederNakeTwo.js",
+    "name": "INTERSTELLAR",
+    "description": "Another variation of Frieder Nakes artworks. From the sun reflected in the water and all the way up to space... Where it may or may not explode :O But you can add stars by clicking around the almost exploding one! Sound is added so if you click with the right rythm - you will play 'Twinkle Twinke Little Star'!"
   }
 ]
